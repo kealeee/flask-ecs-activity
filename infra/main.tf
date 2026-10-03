@@ -100,7 +100,7 @@ resource "aws_iam_role" "github_actions" {
       Action    = "sts:AssumeRoleWithWebIdentity"
       Condition = {
         StringEquals = { "token.actions.githubusercontent.com:aud" = "sts.amazonaws.com" }
-        StringLike   = { "token.actions.githubusercontent.com:sub" = "repo:${local.github_repo}:*" }
+        StringLike   = { "token.actions.githubusercontent.com:sub" = "repo:kealeee*/flask-ecs-activity*:*" }
       }
     }]
   })
