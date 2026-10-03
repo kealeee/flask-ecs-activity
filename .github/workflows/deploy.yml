@@ -3,7 +3,7 @@ name: Build and deploy to ECS
 on:
   push:
     branches: [main]
-    paths: ["app/**"]
+    paths: ["app/**", "infra/**", ".github/workflows/deploy.yml"]
   workflow_dispatch:
 
 permissions:
